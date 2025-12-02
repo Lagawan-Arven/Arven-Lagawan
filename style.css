@@ -604,8 +604,8 @@ header .hamburger{
 
 /*ABOUT*/
 .About .container{
-    grid-template-rows: 10% 25% 65%;
-    height: 77rem;
+    grid-template-rows: 10% 35% 55%;
+    height: 72rem;
     padding-top: 0.5rem;
 }
  
@@ -671,4 +671,26 @@ form button{
 }
 }
 
+@media (max-width: 376px){
+    /*ABOUT*/
+.About .container{
+    grid-template-rows: 10% 30% 60%;
+    height: 73rem;
+    padding-top: 0.5rem;
+}
+.About .content1{
+    padding-top: 2rem;
+}
+}
 
+@media (max-width: 321px){
+    /*ABOUT*/
+.About .container{
+    grid-template-rows: 10% 25% 65%;
+    height: 77rem;
+    padding-top: 0.5rem;
+}
+.About .content1{
+    padding-top: 1rem;
+}
+}
