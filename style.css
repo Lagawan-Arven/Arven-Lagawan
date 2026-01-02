@@ -263,13 +263,27 @@ text-align: center;
     margin-bottom: 2rem;
     border-radius: 20px;
 }
-.Projects .item1 img{
+.Projects .item img{
     height: 10rem;
     width: 16rem;
     border: 1px solid var(--color-accent);
     margin-top: 1rem;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+}
+.Projects .buttons{
+    text-align: left;
+    padding-left: 2rem;
+}
+.Projects button{
+    border-radius: 10px;
+    height: 2rem;
+    border-color: var(--color-accent);
+    background-color: transparent;
+    color: white;
+}
+.Projects button:hover{
+    box-shadow: 0 0 5px var(--color-primary);
 }
 
 /* SERVICES SECTION */

@@ -1,5 +1,4 @@
 
-
 /* hamburger*/
 const hamburger = document.querySelector(".hamburger");
 const nav_Links = document.querySelector(".nav-links");
@@ -13,4 +12,18 @@ document.getElementById("connect-button").addEventListener("click" , function(){
     window.location.href = "#Contact";
 });
 
-
+/* PROJECTS SECTION*/
+/* Demo Button*/
+document.getElementById("demo1").addEventListener("click",function(){
+    window.open("https://lagawan-arven.github.io/Arven-Lagawan", "_blank");
+});
+document.getElementById("demo2").addEventListener("click",function(){
+    window.open("https://fastapi-ecommerce-api-19f7.onrender.com/docs#", "_blank");
+});
+/* Codes Button*/
+document.getElementById("codes1").addEventListener("click",function(){
+    window.open("https://github.com/Lagawan-Arven/Arven-Lagawan", "_blank");
+});
+document.getElementById("codes2").addEventListener("click",function(){
+    window.open("https://github.com/Lagawan-Arven/FastAPI-core-ecommerce-api", "_blank");
+});
