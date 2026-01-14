@@ -27,3 +27,22 @@ document.getElementById("codes1").addEventListener("click",function(){
 document.getElementById("codes2").addEventListener("click",function(){
     window.open("https://github.com/Lagawan-Arven/FastAPI-core-ecommerce-api", "_blank");
 });
+
+/* Send a message from the form */
+API_URL = "https://connection-messagees-api.onrender.com/";
+
+async function send_message(){
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const content = document.getElementById("content").value;
+
+    const message = {name,email,content};
+
+    await fetch(`${API_URL}/message`,{
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(message)
+    });
+}
+/* Form submit button */
+document.getElementById("submit").addEventListener("click",send_message);
