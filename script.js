@@ -29,7 +29,7 @@ document.getElementById("codes2").addEventListener("click",function(){
 });
 
 /* Send a message from the form */
-API_URL = "https://connection-messagees-api.onrender.com/";
+API_URL = "https://connection-messagees-api.onrender.com";
 
 async function send_message(){
     const name = document.getElementById("name").value;
