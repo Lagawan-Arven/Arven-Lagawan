@@ -36,12 +36,10 @@ async function send_message(){
     const email = document.getElementById("email").value;
     const content = document.getElementById("content").value;
 
-    const message = {name,email,content};
-
     await fetch(`${API_URL}/message`,{
         method: "POST",
         headers: {"Content-Type":"application/json"},
-        body: JSON.stringify(message)
+        body: JSON.stringify(name,email,content)
     });
 }
 /* Form submit button */
